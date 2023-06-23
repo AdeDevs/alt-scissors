@@ -25,26 +25,26 @@ const SecondScreen: React.FunctionComponent = () => {
           <h2>
             One Stop.
             <br />
-            Four <span className="blue-text">Possibilities</span>
+            Four <span className="log-text">Possibilities</span>
           </h2>
-          <div className="stats-container">
-            <div className="stats">
+          <div className="userdata-container">
+            <div className="data">
               <div id="users">
-                <h4 className="stat-num">3M</h4>
+                <h4 className="user-stat">3M</h4>
                 <p className="stat-desc">Active Users</p>
               </div>
               <div id="links-created">
-                <h4 className="stat-num">60M</h4>
+                <h4 className="user-stat">60M</h4>
                 <p className="stat-desc">Links &amp; QR codes created</p>
               </div>
             </div>
-            <div className="stats">
+            <div className="data">
               <div id="clicked">
-                <h4 className="stat-num">1B</h4>
+                <h4 className="user-stat">1B</h4>
                 <p className="stat-desc">Clicked &amp; Scanned connections</p>
               </div>
               <div id="integrations">
-                <h4 className="stat-num">300K</h4>
+                <h4 className="user-stat">300K</h4>
                 <p className="stat-desc">App Integrations</p>
               </div>
             </div>
@@ -52,10 +52,10 @@ const SecondScreen: React.FunctionComponent = () => {
         </div>
 
         <div>
-          <div className="choose-us hide">
+          <div className="why-us hide">
             <div>
               <img src={Stroke} alt="icon-stroke" />
-              <h2>Why Choose <span className="blue-text">Scissors</span></h2>
+              <h2>Why Choose <span className="log-text">Scissors</span></h2>
             </div>
             <p>
               Scissors is the hub of everything that has to do with your link
@@ -69,7 +69,7 @@ const SecondScreen: React.FunctionComponent = () => {
            {/* ----------------- SERVICES SECTION -----------------  */}
 
           <div className="services hide">
-            <div className="services-group-1">
+            <div className="services-uno">
               <div className="service hide">
                 <img
                   src={Service}
@@ -97,7 +97,7 @@ const SecondScreen: React.FunctionComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="services-group-2">
+            <div className="services-dos">
               <div className="service hide">
                 <img
                   src={QRCode}
@@ -137,7 +137,7 @@ const SecondScreen: React.FunctionComponent = () => {
           <img src={Stroke} alt="icon-stroke" />
           <div>
             <h2>
-              A <span className="blue-text">price perfect</span> for your needs.
+              A <span className="log-text">price perfect</span> for your needs.
             </h2>
             <p>
               From catering for your personal, business, event, socials needs,
@@ -374,7 +374,7 @@ const SecondScreen: React.FunctionComponent = () => {
             <div className="question-container hide">
               <div className="question">
                 <p>
-                  Are there any limitations on the number of URLs I can shorten?
+                  Are there any limitations onuser- theber of URLs I can shorten?
                 </p>
                 <img src={IconPlus} alt="icon-plus" />
               </div>

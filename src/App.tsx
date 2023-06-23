@@ -23,43 +23,43 @@ function App() {
             &nbsp;&nbsp;&nbsp;
             <h1 id="name"> Scissor</h1>
           </div>
-          <ul className="nav-list">
-            <li className="nav-item">
-              <a href="#" className="nav-link blue-text">
+          <ul className="list">
+            <li>
+              <a href="#" className="list-link blue-text">
                 My URLs
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" id="features" className="nav-link">
+            <li>
+              <a href="#" id="features" className="list-link">
                 Features
                 <img src={IconDown} alt="icon-down" />
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
+            <li>
+              <a href="#" className="list-link">
                 Pricing
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
+            <li>
+              <a href="#" className="list-link">
                 Analytics
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
+            <li>
+              <a href="#" className="list-link">
                 FAQs
               </a>
             </li>
           </ul>
-          <div className="cta">
-            <a href="#" className="blue-text">
+          <div className="log-in">
+            <a href="#" className="log-text">
               Log In
             </a>
             <button className="btn">Try for free</button>
           </div>
         </nav>
-        <section className="intro-container">
-          <div className="intro-text hide">
+        <section className="uno">
+          <div className="uno-content hide">
             <h2>
               Optimize Your Online Experience with Our Advanced &nbsp; 
               <strong id="important" className="blue-text">
@@ -75,14 +75,14 @@ function App() {
               engagement.
             </p>
           </div>
-          <div className="cta">
+          <div className="log-in">
             <button className="btn">Sign Up</button>
-            <a href="#" className="blue-text">
+            <a href="#" className="log-text">
               Learn More
             </a>
           </div>
         </section>
-        <section className="group-2 hide">
+        <section className="dos hide">
           <div>
             <img src={Link} alt="icon-link" className="hide" />
             <p className="hide">
@@ -93,7 +93,7 @@ function App() {
           </div>
           <img src={Vector} alt="" className="hide" />
         </section>
-        <section className="group-3 hide">
+        <section className="tres hide">
           <img src={Ellipse} alt="ellipse.png" id="ellipse" />
           <img src={Rectangle} alt="rectangle.svg" id="rectangle" />
         </section>
