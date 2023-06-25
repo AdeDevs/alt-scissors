@@ -1,3 +1,14 @@
+# Introduction
+
+The URL Shortener project is a web application developed using TypeScript and ReactJS. Its main purpose is to provide a convenient way to shorten long URLs into shorter, more manageable links. The shortened links can then be easily shared and used by users.
+
+## The main objectives of the project are:
+
+To provide a simple and intuitive user interface for shortening URLs.
+To generate unique and secure shortened URLs.
+To track and display usage statistics for shortened links.
+To handle redirection from shortened URLs to their original destinations efficiently.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
