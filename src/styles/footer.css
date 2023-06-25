@@ -34,7 +34,7 @@ footer {
     display: flex;
     align-items: flex-start;
     padding: 8px;
-    font-family: var(--bold);
+    font-family: var('Gilroy-Medium', sans-serif);
   }
   
   #footer-icon-line {
@@ -67,7 +67,7 @@ footer {
   }
   
   .info-container > h5 {
-    font-family: var(--bold);
+    font-family: var('Gilroy-Medium', sans-serif);
     padding-bottom: 8px;
   }
   
