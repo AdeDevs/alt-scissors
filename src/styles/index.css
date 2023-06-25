@@ -615,13 +615,25 @@ a:hover {
   margin: 42px 42px 24px 42px;
 }
 
+
+.trim-url label {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: red;
+  font-weight: lighter;
+  padding: 1px auto;
+  box-sizing: border-box;
+}
+
 #domain,
 .trim-url > div > form > input {
   color: var(--accent-color);
   padding: 8px 12px;
   border: 1px solid #3284ff;
   border-radius: 12px;
-  font-family: var(--medium);
+  font-family: "Poppins", sans-serif;
   caret-color: var(--accent-color);
 }
 
@@ -642,7 +654,7 @@ a:hover {
 #input-url::placeholder,
 #input-alias::placeholder {
   color: #3284ff;
-  font-family: var(--medium);
+  font-family: "Poppins", sans-serif;
 }
 
 .trim-url > div > div > .btn {

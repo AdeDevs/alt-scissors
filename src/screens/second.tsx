@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Stroke from '../assets/icon-stroke.svg'
 import Service from '../assets/service-icon-link.svg'
 import ServiceIcon from '../assets/service-icon-edit.svg'
@@ -17,6 +17,23 @@ import GetStarted2 from '../assets/get-started-pattern-2.svg'
 import Wand from '../assets/icon-magicwand.svg'
 
 const SecondScreen: React.FunctionComponent = () => {
+  const [url, setUrl] = useState('')
+  const [alias, setAlias] = useState('')
+  const [error, setError] = useState(false)
+
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+     e.preventDefault();
+     if (url.length == 0 || alias.length == 0) {
+        setError(true)
+     }
+    if (url && alias) {
+      console.log(`URL: ${url}`, `\nAlias: ${alias}` )
+    }
+    if (url && alias) {
+      alert(`Submitted your url (${url}) with alias: ${alias}`)
+    }
+  }
+
     return (
       <div>
         <main>
@@ -291,28 +308,36 @@ const SecondScreen: React.FunctionComponent = () => {
         <div>
           <form>
             <input
-              type="text"
+              type="url"
+              required
               id="input-url"
               placeholder="Paste URL here..."
               className="hide"
+              onChange={e => setUrl(e.target.value)}
             />
+            {error && url.length <= 0 ?
+             <label>Please input a URL</label>: ""}
             <br />
             <select id="domain" className="hide">
               <option value="">Choose Domain</option>
-              <option value="">Domain 1</option>
-              <option value="">Domain 2</option>
-              <option value="">Domain 3</option>
-              <option value="">Domain 4</option>
-            </select>
+              <option value="">First Domain</option>
+              <option value="">Second Domain</option>
+              <option value="">Third Domain</option>
+              <option value="">First Domain</option>
+            </select> &nbsp; &nbsp; &nbsp; &nbsp; 
             <input
               type="text"
               id="input-alias"
               placeholder="Type Alias Here"
               className="hide"
+              required
+              onChange={e => setAlias(e.target.value)}
             />
+            {error && alias.length <= 0 ?
+             <label>Please input an Alias</label>: ""}
           </form>
           <div>
-            <button className="btn">
+            <button className="btn" onClick={handleSubmit}>
               Trim URL
               <img
                 src={Wand}
